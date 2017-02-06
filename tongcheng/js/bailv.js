@@ -130,11 +130,18 @@ $(function() {
             });
         },
         dealVideo:function(){
+
+            var flag = false;
             $(".video_in").click(function(){
+                flag=!flag;
+                if(flag){
                 $(".mask").hide();
                 $(".play").hide();
                 $(".videoimg").hide();
-                $("video")[0].play();
+                $("video")[0].play();                    
+            }else{
+                 $("video")[0].pause(); 
+            }
             })
         }
     }
