@@ -164,14 +164,8 @@ h3 {
 
 #videoList {
     width: 265px;
-    height: 228px;
+    height: 100%;
     font-size: 14px;
-}
-
-.msp_container {
-    overflow: hidden;
-    left: 0px;
-    top: 0px;
 }
 
 #videoList ul {
@@ -182,14 +176,24 @@ h3 {
 }
 
 #videoList ul>li {
-    line-height: 30px;
+    padding: 10px;
+    line-height: 20px;
+    background-color:#ffe697;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .imgList>li {
     float: left;
     padding-right:15px;
-}
 
+}
+#videoList ul>li.lifirst{
+    background-color: red;
+}
+.scroller-track,.scroller-bar{
+    background: #e3c975!important;
+}
 .ulbox {
     position: relative;
     height: 175px;
